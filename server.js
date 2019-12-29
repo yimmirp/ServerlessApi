@@ -5,7 +5,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello from App Engine!');
+  res.json({
+    nombre:'Yimmi Daniel'
+  });
 });
 
 // Listen to the App Engine-specified port, or 8080 otherwise
